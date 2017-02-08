@@ -84,7 +84,7 @@ br.bookTitle= 'Open Library BookReader Presentation';
 br.bookUrl  = 'http://openlibrary.org';
 
 // Override the path used to find UI images
-br.imagesBaseURL = '../BookReader/images/';
+br.imagesBaseURL = 'BookReader/images/';
 
 br.getEmbedCode = function(frameWidth, frameHeight, viewParams) {
     return "Embed code not supported in bookreader demo.";
