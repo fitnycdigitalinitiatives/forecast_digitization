@@ -6,3 +6,6 @@
 #BRtoolbar .embed, .print {
     display: none;
 }
+.BRemptypage {
+    background-color: #9A9B9D;
+}
