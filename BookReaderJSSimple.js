@@ -80,8 +80,9 @@ br.getPageNum = function(index) {
 br.numLeafs = 8;
 
 // Book title and the URL used for the book title link
-br.bookTitle= 'Open Library BookReader Presentation';
-br.bookUrl  = 'http://openlibrary.org';
+br.bookTitle= 'Standard Color Card of America, 1915';
+br.bookUrl  = 'index.html';
+br.logoURL = 'http://www.fitnyc.edu/'
 
 // Override the path used to find UI images
 br.imagesBaseURL = 'BookReader/images/';
