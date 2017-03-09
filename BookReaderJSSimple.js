@@ -22,7 +22,7 @@ br.getPageURI = function(index, reduce, rotate) {
     // reduce and rotate are ignored in this simple implementation, but we
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
-    var leaf = 103614;
+    var leaf = 103864;
     leaf = leaf + index;
     var leafStr = leaf.toString();
     var url = 'https://fitdil.fitnyc.edu/media/get/89154/lb_fc_scca_1915/'+leafStr + '/lb_fc_scca_1915/';
@@ -77,7 +77,7 @@ br.getPageNum = function(index) {
 }
 
 // Total number of leafs
-br.numLeafs = 8;
+br.numLeafs = 10;
 
 // Book title and the URL used for the book title link
 br.bookTitle= 'Standard Color Card of America, 1915';
