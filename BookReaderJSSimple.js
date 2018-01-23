@@ -8,12 +8,12 @@ br = new BookReader();
 
 // Return the width of a given page.  Here we assume all images are 800 pixels wide
 br.getPageWidth = function(index) {
-    return 3000;
+    return 2600;
 }
 
 // Return the height of a given page.  Here we assume all images are 1200 pixels high
 br.getPageHeight = function(index) {
-    return 6000;
+    return 4900;
 }
 
 // We load the images from archive.org -- you can modify this function to retrieve images
@@ -22,10 +22,10 @@ br.getPageURI = function(index, reduce, rotate) {
     // reduce and rotate are ignored in this simple implementation, but we
     // could e.g. look at reduce and load images from a different directory
     // or pass the information to an image server
-    var leaf = 103864;
-    leaf = leaf + index;
-    var leafStr = leaf.toString();
-    var url = 'https://fitdil.fitnyc.edu/media/get/89154/lb_fc_scca_1915/'+leafStr + '/lb_fc_scca_1915/';
+    var leafStr = '0000';
+    var imgStr = (index+1).toString();
+    var re = new RegExp("0{"+imgStr.length+"}$");
+    var url = 'JPEG/lb_fc_scca_1915_'+leafStr.replace(re, imgStr) + '.jpg';
     return url;
 }
 
